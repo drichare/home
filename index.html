@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ドリチャレ公式ページ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; 
+        width: 100%;
+    }
+
+    header, .main, footer {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .footer-container {
+        padding-left: 20px; 
+        width: calc(100% - 40px); 
+    }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #000;
+            padding: 15px 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .head-img {
+            width: 150px; /* ロゴの幅を調整 */
+            height: auto;
+        }
+        .main {
+            padding: 100px 20px 20px; /* ヘッダーの高さを考慮してパディングを調整 */
+            background-color: #f9f9f9;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+        text-align: left;
+        padding: 20px;
+        width: 100%;
+        position: relative;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding-left: 30px; /* 左側に余白を追加 */
+        }
+
+        #foot-img {
+            width: 200px;
+            margin-bottom: 10px;
+        }
+
+        .footer-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+
+        .footer-nav a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 14px;
+            display: block;
+            padding-left: 30px; /* 各リンクにも少し余白を */
+        }
+
+        .footer-nav a:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+
+        .footer-text {
+            color: #808080;
+            font-size: 12px;
+            padding-left: 30px; /* 余白を統一 */
+
+        }
+
+        .top {
+            position: relative;
+            text-align: center;
+            margin-top: 60px; /* ヘッダーが固定されるためのマージンを追加 */
+        }
+        #img-list{
+            font-size: 25px;
+            color: #808080;
+        }
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .section h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .section p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .section ul {
+            padding-left: 20px;
+        }
+        .section ul li {
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        /*.siteを書き換える*/
+    .home{
+    opacity: 0; 
+    transform: translateY(100px); 
+    transition: opacity 0.5s, transform 0.5s; 
+    }
+    .about{
+    opacity: 0; 
+    transform: translateY(100px); 
+    transition: opacity 0.5s, transform 0.5s; 
+    }
+    .services{
+    opacity: 0; 
+    transform: translateY(100px); 
+    transition: opacity 0.5s, transform 0.5s; 
+    }
+    .link{
+    opacity: 0; 
+    transform: translateY(100px); 
+    transition: opacity 0.5s, transform 0.5s; 
+    }
+    .div{
+    opacity: 0; 
+    transform: translateY(100px); 
+    transition: opacity 0.5s, transform 0.5s; 
+    }
+        .mem,.about,.screenshots-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+    .mem,.about,.screenshots-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .screenshots-grid img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .mem-grid {
+            display: flex;
+            flex-wrap: nowrap; /* 折り返しなしで横並び */
+            justify-content: center; /* 中央揃え */
+            gap: 40px;
+            overflow-x: auto; /* 画面幅を超える場合スクロール可能に */
+        }
+
+        .mem-grid img {
+            width: 150px; /* 画像の幅を統一 */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        /*"e-block"は消さないで*/
+        e-block
+
+        /*視覚情報のカスタマイズ*/
+        .section-title {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            color: #222;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            display: inline-block;
+            position: relative;
+        }
+
+
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 85px;
+            height: 5px;
+            margin: 8px auto 0;
+            background: linear-gradient(90deg, #ff6ec7, #7b68ee, #00c3ff);
+            border-radius: 2px;
+        }
+        .mem-grid img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+        .mem-grid img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .mem-img{
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        /*セクションタイトル追加*/
+
+       /* セクションタイトル */
+        .section-title {
+            font-size: 36px;
+            font-weight: 600;
+            text-align: center;
+            position: relative;
+            color: black; /* 文字色を黒に設定 */
+            margin-bottom: 20px;
+        }
+
+        /* 下線エフェクト（最初は非表示） */
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(135deg, #ff6ec7, #7b68ee, #00c3ff); /* グラデーション */
+            margin: 10px auto 0;
+            border-radius: 2px;
+            opacity: 0;
+            transform: scaleX(0);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+
+        /* スクロールで下線エフェクトを表示 */
+        .section-title.show::after {
+            transform: scaleX(1);
+            opacity: 1;
+        }
+        /*btnクラス*/
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .screenshots-grid img, 
+.mem-grid img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.screenshots-grid img:hover, 
+.mem-grid img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-box {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    margin-left: 23%;
+}
+
+.contact-box:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.contact-box h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.contact-box a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+@media screen and (max-width: 768px) {
+
+/* 基本フォントサイズ調整 */
+body {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+header {
+    padding: 10px 10px;
+}
+
+.head-img {
+    width: 120px;
+}
+
+nav ul li {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+}
+
+nav ul li a {
+    font-size: 16px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+.btn {
+    font-size: 14px;
+    padding: 12px 24px;
+}
+
+.screenshots-grid {
+    grid-template-columns: 1fr;
+}
+
+.mem-grid {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.mem-grid img {
+    width: 120px;
+}
+
+.contact-box {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-nav a {
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.footer-text {
+    font-size: 10px;
+}
+
+#img-list {
+    font-size: 20px;
+}
+
+.top-img {
+    width: 100%;
+}
+header {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .head-img {
+        width: 120px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+    .header-spacer {
+    height: 80px;
+}
+
+}
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="header">
+        <a href=""><img class="head-img" src="img/rinkulogo.png" alt="HeaderLogo"></a>
+        <nav>
+            <ul>
+                <li><a id="nav-abt">ドリチャレ</a></li>
+                <li><a id="nav-ser">シリーズ</a></li>
+                <li><a id="nav-news">ニュース</a></li>
+                <li><a id="nav-mem">メンバー</a></li>
+                <li><a id="nav-staff">スタッフ</a></li>
+                <li><a id="nav-gal">ギャラリー</a></li>
+                <li><a id="nav-cont">コンタクト</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="header-spacer"></div>
+<div class="top" id="top">
+    <img id="top-img" class="top-img" src="img/rinku.png" alt="Background Image" style="width: 70%;height: auto;z-index: 0;">
+    <div id="img-list"><span id="spanone" style="color: black; margin-right: 10px;cursor: pointer;">●</span><span id="spantwo" style="margin-right: 10px;cursor: pointer;">●</span></div>
+</div>
+<div class="main" id="main">
+    <section id="about" class="screenshots-section">
+        <div class="container">
+            <h2 class="section-title">ドリチャレとは</h2>
+            <a href="https://www.youtube.com/@R1nkuu/" class="btn">チャンネルをチェック! ⇛</a>
+        </div>
+    </section>
+    <section id="ser" class="screenshots-section">
+        <div class="container">
+            <h2 class="section-title">シリーズ</h2>
+            <div class="screenshots-grid">
+                <div class="mem-item">
+                <a href="https://youtube.com/playlist?list=PLKcNpVqx39wt074wXkumRilYKzH7d8iC5&si=WJe_AF2tqgknYLwU">
+                <img src="img/BVE.png" alt="Screenshot 1">
+                    </a>
+                    <h3>俺は全国の運転士王になりたい!</h3>
+                </div>
+                
+                <div class="mem-item">
+                <a href="https://youtube.com/playlist?list=PLKcNpVqx39wvLJyg4a3k8jxjKwlybsh-w&si=RGxIOsXNzjUqGr9p">
+                    <img src="img/pro.png" alt="Screenshot 2">
+                </a>
+                    <h3>りんくうのプロスピリアタイ</h3>    
+                </div>
+            
+                <div class="mem-item">
+                <a href="https://www.youtube.com/playlist?list=PLKcNpVqx39wsRWDtlSNcwAlNmxoltSFTu">
+                    <img src="img/dayitem.png" alt="Screenshot 3">
+                </a>
+                    <h3>1日1種類アイテム入手</h3>
+            </div>
+            </div>
+            <a href="https://www.youtube.com/@R1nkuu/playlists" class="btn">すべてのシリーズを見てみる ⇛</a>  
+        </div>
+    </section>
+    <section id="news" class="screenshots-section">
+        <div class="container">
+            <h2 class="section-title">ニュース</h2>
+            <a href="news/index.html" class="btn">ニュースをチェック! ⇛</a>
+        </div>
+    </section>
+    <section id="mem" class="mem-section screenshots-section">
+    <div class="container">
+        <h2 class="section-title">メンバー</h2>
+        <div class="mem-grid">
+            <div class="mem-item">
+                <a href="members/rinku/index.html">
+                    <img class="mem-img" src="img/mem/rinku.png" alt="Screenshot 1">
+                </a>
+                <h3>りんくう</h3>
+            </div>
+            <div class="mem-item">
+                <a href="members/mujaki/index.html">
+                    <img class="mem-img" src="img/mem/mujaki.png" alt="Screenshot 3">
+                </a>
+                <h3>むじゃき</h3>
+            </div>
+            <div class="mem-item">
+                <a href="members/atsu/index.html">
+                    <img class="mem-img" src="img/mem/atsu.png" alt="Screenshot 4">
+                </a>
+                <h3>あっつー</h3>
+            </div>
+            <div class="mem-item">
+                <a href="members/konomaro/index.html">
+                    <img class="mem-img" src="img/mem/konomaro.png" alt="Screenshot 5">
+                </a>
+                <h3>このまろ</h3>
+            </div>
+            <div class="mem-item">
+                <a href="members/kappi/index.html">
+                    <img class="mem-img" src="img/mem/kappi.png" alt="Screenshot 5">
+                </a>
+                <h3>かっぴー</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="staff" class="mem-section screenshots-section">
+        <div class="container">
+            <h2 class="section-title">スタッフ</h2>
+            <div class="mem-grid">
+                <div class="mem-item">
+                <a href="staff/rati/index.html">
+                    <img class="mem-img"src="https://pbs.twimg.com/profile_images/1893959544453156864/LCuqdU3w_400x400.jpg" alt="Screenshot 1">
+                </a>
+                <h3>らてぃ🎨</h3>    
+                </div>
+                <div class="mem-item">
+                    <a href="staff/kagura/index.html">
+                        <img class="mem-img" src="img/rdy.png" alt="Screenshot 3">
+                    </a>
+                        <h3>かぐら</h3>
+                        </div>
+                <div class="mem-item">
+                <a>
+                    <img class="mem-img" src="img/rdy.png" alt="Screenshot 2">
+                </a>
+                    <h3></h3>
+                    </div>
+                <div class="mem-item">
+                    <img class="mem-img" src="img/rdy.png" alt="Screenshot 4">
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section id="gal" class="screenshots-section">
+        <div class="container">
+            <h2 class="section-title">ギャラリー</h2>
+            <div class="screenshots-grid">
+                <a href="https://youtu.be/B9AtuUnh-QM?si=UYQphpdA8-JNLjsO">
+                    <img src="img/gal/aho.png" alt="Screenshot 1">
+                </a>
+                
+                <a href="https://youtu.be/iiE8ESrwZmo?si=cs0_LsGerLb9f2g5">
+                <img src="img/gal/bye.png" alt="Screenshot 2">
+                </a>
+                
+                <a href="https://youtu.be/17TeId-bpss?si=tcu0S1hQzgGPKlft">
+                <img src="img/gal/thank.png" alt="Screenshot 3">
+                </a>
+                
+                <a href="https://youtu.be/nHQE4L553kk?si=NQZ3MPp5y6EHI5BL">
+                <img src="img/gal/fall.png" alt="Screenshot 4">
+                </a>
+                
+                <a href="https://youtu.be/DGQR1oitC0s?si=itoXRbruQ7LFiTff">
+                <img src="img/gal/bird.png" alt="Screenshot 5">
+                </a>
+                
+                <a href="https://youtu.be/DGQR1oitC0s?si=itoXRbruQ7LFiTff">
+                <img src="img/gal/why.png" alt="Screenshot 6">
+                </a>
+            </div>
+            <h3>画像をタップするとその動画に飛べます!</h3>
+        </div>
+    </section>
+    <section id="con" class="screenshots-section">
+        <div class="container">
+            <h2 class="section-title">コンタクト</h2>
+            <div class="contact-box">
+                <h3>メールアドレス: <a href="mailto:drichare0504@gmail.com">drichare0504@gmail.com</a></h3>
+                <h3>X: <a href="https://twitter.com/DC_official0504" target="_blank">@DC_official0504</a></h3>
+            </div>
+        </div>
+    </section>
+    
+</div>
+<footer>
+    <div class="footer-container">
+        <img src="img/rinkulogo.png" id="foot-img" alt="DreamChallenger Logo">
+        <nav class="footer-nav">
+            <a href="#">DreamChallenger事務所(制作中)</a>
+            <a href="#about">About DreamChallenger</a>
+            <a href="#">プライバシーポリシー(制作中)</a>
+            <a href="#con">コンタクト</a>
+            <a href="lic/memarrow/index.html">ホームページについて</a>
+        </nav>
+        <p class="footer-text">DreamChallenger ドリチャレ公式ホームページ</p>
+        <p class="footer-text">&copy; 2025 Dream Challenger Official. All rights reserved.</p>
+    </div>
+</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function () {
+    function checkVisibility() {
+        $(".section-title").each(function () {
+            var elementTop = $(this).offset().top;
+            var windowBottom = $(window).scrollTop() + $(window).height();
+
+            if (elementTop < windowBottom - 250) { // 250px 余裕を持たせる
+                $(this).addClass("show");
+            }
+        });
+    }
+
+    $(window).on("scroll", checkVisibility);
+    checkVisibility(); // 初回チェック
+});
+
+    //nav-click 
+    $(document).ready(function() {
+    
+    $("#nav-abt").click(function() {
+        $("html, body").animate({
+            scrollTop: $("#about").offset().top - 100
+        }, 1000);
+        return false;
+    });
+    $("#nav-ser").click(function() {
+        $("html, body").animate({
+            scrollTop: $("#ser").offset().top - 100
+        }, 1000);
+        return false;
+    });
+    $("#nav-mem").click(function() {
+        $("html, body").animate({
+            scrollTop: $("#mem").offset().top - 100
+        }, 1000);
+        return false;
+    });
+    $("#nav-gal").click(function() {
+        $("html, body").animate({
+            scrollTop: $("#gal").offset().top - 100
+        }, 1000);
+        return false;
+    });
+    $("#nav-cont").click(function() {
+        $("html, body").animate({
+            scrollTop: $("#con").offset().top - 100
+        }, 1000);
+        return false;
+    });
+    $("#nav-staff").click(function() {
+        $("html, body").animate({
+            scrollTop: $("#staff").offset().top - 100
+        }, 1000);
+        return false;
+    });
+    $("#nav-news").click(function() {
+        $("html, body").animate({
+            scrollTop: $("#news").offset().top - 100
+        }, 1000);
+        return false;
+    });
+});
+        
+        //スライドショー
+
+        //最新の画像を前に出すようにお願いします。
+
+
+        let num = -1;
+        
+        const pics_src = [
+            "img/rinku.png",
+            "img/ura.png"
+        ];
+        
+        const indicators = [
+            document.getElementById("spanone"), 
+            document.getElementById("spantwo")
+            //document.getElementById("spantree")
+        ];
+
+
+        function updateIndicators() {
+    indicators.forEach((indicator, index) => {
+        if (index === num) {
+            indicator.style.color = "black"; // アクティブな画像の場合
+        } else {
+            indicator.style.color = "#808080"; // 非アクティブな画像の場合
+        }
+    });
+}
+
+    
+function slideshow_timer(){
+if (num === 1){
+    num = 0;
+} else {
+    num ++;
+}
+document.getElementById("top-img").src = pics_src[num];
+    updateIndicators();
+}
+
+        indicators.forEach((indicator, index) => {
+    indicator.addEventListener("click", function() {
+        num = index; // クリックされたインジケーターのインデックスに切替
+        document.getElementById("top-img").src = pics_src[num];
+        updateIndicators(); // インジケーターのスタイルを更新
+    });
+    
+});
+        
+    
+    //画像リンク
+    document.getElementById("top-img").addEventListener("click", function() {
+
+    if (num === -1 || num === 0){
+        
+    }
+    if (num === 1){
+    window.open("news/item/2025/2/index.html"); 
+    }
+});
+        
+setInterval(slideshow_timer, 6000);
+    
+    </script>
+</body>
+</html>
