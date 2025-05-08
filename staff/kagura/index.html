@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ドリチャレ | スタッフ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <style>
+      
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; 
+        width: 100%;
+    }
+
+    header, .main, footer {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .footer-container {
+        padding-left: 20px; 
+        width: calc(100% - 40px); 
+    }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #000;
+            padding: 15px 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .head-img {
+            width: 150px; /* ロゴの幅を調整 */
+            height: auto;
+        }
+        .main {
+            padding: 100px 20px 20px; /* ヘッダーの高さを考慮してパディングを調整 */
+            background-color: #f9f9f9;
+        }
+    footer {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 30px; /* 左側に余白を追加 */
+}
+
+#foot-img {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding-left: 30px; /* 各リンクにも少し余白を */
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.footer-text {
+    color: #808080;
+    font-size: 12px;
+    padding-left: 30px; /* 余白を統一 */
+}
+      .mem,.screenshots-section {
+            margin-top: 40px;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+       .mem,h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
+        .mem-grid {
+            display: flex;
+            flex-wrap: nowrap; /* 折り返しなしで横並び */
+            justify-content: center; /* 中央揃え */
+            gap: 40px;
+            overflow-x: auto; /* 画面幅を超える場合スクロール可能に */
+        }
+
+        .mem-grid img {
+            width: 150px; /* 画像の幅を統一 */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        #x,#you{
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header">
+        <a href=""><img class="head-img" src="img/rinkulogo.png" alt="HeaderLogo"></a>
+        <nav>
+            <ul>
+                <li><a id="nav-top" href="../../index.html">トップ</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <section id="mem" class="mem-section screenshots-section ">
+        <div class="container">
+            <h2>メンバー</h2>
+            <div class="mem-grid">
+                <img src="img/rdy.png" alt="Screenshot 4">
+            </div>
+            <h3 style="color: blue;">名前:かぐら</h3>
+        </div>
+    </section>
+<footer>
+    <div class="footer-container">
+        <img src="img/rinkulogo.png" id="foot-img" alt="DreamChallenger Logo">
+        <nav class="footer-nav">
+            <a href="#">DreamChallenger事務所(制作中)</a>
+            <a href="/index.html">About DreamChallenger</a>
+            <a href="#">プライバシーポリシー(制作中)</a>
+            <a href="/index.html">コンタクト</a>
+            <a href="/lic/memarrow/index.html">ホームページについて</a>
+        </nav>
+        <p class="footer-text">DreamChallenger ドリチャレ公式ホームページ</p>
+        <p class="footer-text">&copy; 2025 Dream Challenger Official</p>
+    </div>
+</footer>
+</body>
+</html>
