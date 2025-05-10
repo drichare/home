@@ -530,7 +530,7 @@ header {
 <div class="header-spacer"></div>
 <div class="top" id="top">
     <img id="top-img" class="top-img" src="img/rinku.png" alt="Background Image" style="width: 70%;height: auto;z-index: 0;">
-    <div id="img-list"><span id="spanone" style="color: black; margin-right: 10px;cursor: pointer;">●</span><span id="spantwo" style="margin-right: 10px;cursor: pointer;">●</span></div>
+    <div id="img-list"><span id="spanone" style="color: black; margin-right: 10px;cursor: pointer;">●</span><span id="spantwo" style="margin-right: 10px;cursor: pointer;">●</span><span id="spanthree" style="margin-right: 10px;cursor: pointer;">●</span></div>
 </div>
 <div class="main" id="main">
     <section id="about" class="screenshots-section">
@@ -809,13 +809,14 @@ header {
         
         const pics_src = [
             "img/rinku.png",
-            "img/ura.png"
+            "img/ura.png",
+            "img/shop.png"
         ];
         
         const indicators = [
             document.getElementById("spanone"), 
-            document.getElementById("spantwo")
-            //document.getElementById("spantree")
+            document.getElementById("spantwo"),
+            document.getElementById("spanthree")
         ];
 
 
@@ -831,7 +832,7 @@ header {
 
     
 function slideshow_timer(){
-if (num === 1){
+if (num === 2){
     num = 0;
 } else {
     num ++;
@@ -866,7 +867,7 @@ setInterval(slideshow_timer, 6000);
 // ニュースデータ
     //最新のやつは上に
     const newsData = [
-        { title: "不具合の修正について", date: "2025/05/09", link: "news/item/2025/3/index.html", image: "img/3.PNG" }
+        { title: "ドリチャレオンライン新商品追加お知らせ", date: "2025/05/09", link: "news/item/2025/4/index.html", image: "img/shop.png" }
     ];
 
     const newsList = document.getElementById("news-list");
