@@ -473,6 +473,7 @@ header {
                 <li><a id="nav-mem">メンバー</a></li>
                 <li><a id="nav-staff">スタッフ</a></li>
                 <li><a id="nav-gal">ギャラリー</a></li>
+                <li><a id="nav-link">リンク</a></li>
                 <li><a id="nav-cont">コンタクト</a></li>
                 
             </ul>
@@ -488,6 +489,11 @@ header {
     <section id="about" class="screenshots-section">
         <div class="container">
             <h2 class="section-title">ドリチャレとは</h2>
+            <br>
+            <h3>とにかくゲームが大好きな5人が集まったグループです！</h3>
+            <h3>主にマイクラをプレイしてます！</h3>
+            <br>
+            <br>
             <a href="https://www.youtube.com/@R1nkuu/" class="btn">チャンネルをチェック! ⇛</a>
         </div>
     </section>
@@ -628,6 +634,17 @@ header {
             <h3>画像をタップするとその動画に飛べます!</h3>
         </div>
     </section>
+    <section id="link" class="screenshots-section">
+        <div class="container">
+            <h2 class="section-title">リンク</h2>
+            <div class="screenshots-grid">
+                <a href="https://drichare.theshop.jp/">
+                <img src="img/rinku.png" alt="ShopImg" style="width: 40%;">
+                </a>
+            </div>
+            <h3>ドリチャレOnline</h3>
+        </div>
+    </section>
     <section id="con" class="screenshots-section">
         <div class="container">
             <h2 class="section-title">コンタクト</h2>
@@ -714,6 +731,12 @@ header {
     $("#nav-news").click(function() {
         $("html, body").animate({
             scrollTop: $("#news").offset().top - 100
+        }, 1000);
+        return false;
+    });
+    $("#nav-link").click(function() {
+        $("html, body").animate({
+            scrollTop: $("#link").offset().top - 100
         }, 1000);
         return false;
     });
