@@ -1,4 +1,5 @@
 const newsData = [
+    { title: "新メンバー2名加入のおしらせ", date: "2025/08/06", link: "item/2025/7/index.html", image: "item/2025/7/img/2memj.png" },
     { title: "新メンバー加入のお知らせ", date: "2025/07/19", link: "item/2025/6/index.html", image: "item/2025/6/img/newmem.png" },
     { title: "ドリチャレ活動1周年", date: "2025/06/16", link: "item/2025/5/index.html", image: "img/1st.jpg" },
     { title: "ドリチャレオンライン新商品追加お知らせ", date: "2025/05/09", link: "item/2025/4/index.html", image: "img/shop.png" },
@@ -6,4 +7,3 @@ const newsData = [
     { title: "裏方募集のおしらせ", date: "2025", link: "item/2025/2/index.html", image: "img/ura.png" },
     { title: "ドリチャレ公式HP開設", date: "2025", link: "item/2025/1/index.html", image: "img/rinku.png" }
 ];
-//何かしらのエラーを確認しています!
