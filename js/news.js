@@ -1,7 +1,7 @@
 // ニュースデータ
     //最新のやつは上に
     const newsData = [
-          { title: "新メンバー2名加入のおしらせ", date: "2025/08/06", link: "news/item/2025/7/index.html", image: "news/item/2025/7/img/2memj.png" }
+          { title: "べるだあ・ロボくん・ゆれん加入のお知らせ", date: "2025/08/23", link: "news/item/2025/9/index.html", image: "news/item/2025/9/img/2gen.png" }
     ];
 
     const newsList = document.getElementById("news-list");
