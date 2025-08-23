@@ -6,8 +6,8 @@
         let num = -1;
         
         const pics_src = [
-            "img/slide/rinku.png",
-            "img/slide/shop.png"
+            "img/slide/2gen.png",
+            "img/slide/rinku.png"
         ];
         
         const indicators = [
@@ -50,9 +50,9 @@ document.getElementById("top-img").src = pics_src[num];
     
     //画像リンク
     document.getElementById("top-img").addEventListener("click", function() {
-
-    if (num === 1){
-    window.open("https://drichare.theshop.jp/"); 
+    
+    if (num === 0){
+    window.open("https://drichare.github.io/home/news/item/2025/9"); 
     }
 });
 setInterval(slideshow_timer, 6000);
