@@ -51,9 +51,14 @@ document.getElementById("top-img").src = pics_src[num];
     
     //画像リンク
     document.getElementById("top-img").addEventListener("click", function() {
+
+    if (num === 0 || num === -1){
+    window.open("https://drichare.github.io/home/news/item/2025/10"); 
+    }
     
     if (num === 1){
     window.open("https://drichare.github.io/home/news/item/2025/9"); 
     }
 });
 setInterval(slideshow_timer, 6000);
+
