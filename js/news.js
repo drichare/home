@@ -1,7 +1,7 @@
 // ニュースデータ
     //最新のやつは上に
     const newsData = [
-          { title: "べるだあ・ロボくん・ゆれん加入のお知らせ", date: "2025/08/23", link: "news/item/2025/9/index.html", image: "news/item/2025/9/img/2gen.png" }
+          { title: "えいと加入のお知らせ", date: "2025/09/05", link: "news/item/2025/10/index.html", image: "news/item/2025/10/img/eitojoin.png" },
     ];
 
     const newsList = document.getElementById("news-list");
@@ -19,3 +19,4 @@
         `;
         newsList.appendChild(li);
     });
+
