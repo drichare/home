@@ -6,6 +6,7 @@
         let num = -1;
         
         const pics_src = [
+            "img/slide/joinitsu.png",
             "img/slide/eitojoin.png",
             "img/slide/2gen.png",
             "img/slide/rinku.png"
@@ -14,7 +15,8 @@
         const indicators = [
             document.getElementById("spanone"), 
             document.getElementById("spantwo"),
-            document.getElementById("spanthree")
+            document.getElementById("spanthree"),
+            document.getElementById("spanfour")
         ];
 
 
@@ -30,7 +32,7 @@
 
     
 function slideshow_timer(){
-if (num === 2){
+if (num === 3){
     num = 0;
 } else {
     num ++;
@@ -53,10 +55,13 @@ document.getElementById("top-img").src = pics_src[num];
     document.getElementById("top-img").addEventListener("click", function() {
 
     if (num === 0 || num === -1){
-    window.open("https://drichare.github.io/home/news/item/2025/10"); 
+    window.open("https://drichare.github.io/home/news/item/2025/11"); 
     }
     
-    if (num === 1){
+    if(num === 1){
+    window.open("https://drichare.github.io/home/news/item/2025/10"); 
+    }
+    if (num === 2){
     window.open("https://drichare.github.io/home/news/item/2025/9"); 
     }
 });
