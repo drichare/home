@@ -1,7 +1,7 @@
 // ニュースデータ
     //最新のやつは上に
     const newsData = [
-          { title: "えいと加入のお知らせ", date: "2025/09/05", link: "news/item/2025/10/index.html", image: "news/item/2025/10/img/eitojoin.png" },
+           { title: "いつく加入のお知らせ", date: "2025/09/13", link: "news/item/2025/11/index.html", image: "news/item/2025/11/img/joinitsu.png" },
     ];
 
     const newsList = document.getElementById("news-list");
@@ -19,4 +19,5 @@
         `;
         newsList.appendChild(li);
     });
+
 
