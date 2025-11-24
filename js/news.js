@@ -1,7 +1,7 @@
 // ニュースデータ
 //最新のやつは上に
 const newsData = [
-    { title: "みゅーず加入のお知らせ", date: "2025/10/08", link: "news/item/2025/13/index.html", image: "news/item/2025/13/img/welmuse.png" }
+    { title: "11/23はいつくの誕生日", date: "2025/11/24", link: "news/item/2025/14/index.html", image: "news/item/2025/14/img/itsuku.jpg" }
 ];
 
 const newsList = document.getElementById("news-list");
